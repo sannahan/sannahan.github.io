@@ -15,13 +15,15 @@
             font-family: 'Calibri', Arial, sans-serif;
             font-size: larger;
             line-height: 1.5;
-
         }
         .container {
             max-width: 1000px; /* Set a maximum width for the content container */
             margin: 0 auto; /* Center the container horizontally */
             padding: 20px; /* Add padding to creat
             e wide margins */
+        }
+        .section {
+          margin-bottom: 20px; /* Add margin at the bottom of each section */
         }
     </style>
 </head>
@@ -89,13 +91,13 @@
             </p>
         </section>
 
-        <section>
+        <section class="section">
             <p>Now let's examine the data between the cities. Below you can see comparisons in terms of sales & rent prices. It's easy to see that rent prices in the capital area have been significantly greater and have been increasing more rapidly than in other cities. As for sold apartments, square meter prices for Vantaa are left behind Helsinki & Espoo-Kauniainen and are more in line with other major cities, Turku and Tampere. Looking at other cities, we can see that the rental prices have been increasing in all cities and apartments sizes. For sold apartments, apart from the biggest cities the prices have been more steady or even decreasing.
             </p>
         </section>
         
         <!-- B. Rental apartments -->
-        <section>
+        <section class="section">
             <div class='tableauPlaceholder' id='viz1698672108531' style='position: relative'><noscript><a href='#'><img
                             alt='DRental '
                             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B_&#47;B_Rentalapartments&#47;DRental&#47;1_rss.png'
@@ -134,7 +136,7 @@
         </section>
 
         <!-- A. Sold apartments -->
-        <section>
+        <section class="section">
           <div class='tableauPlaceholder' id='viz1698672187429' style='position: relative'><noscript><a href='#'><img
                   alt='DSold '
                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Soldapartments&#47;DSold&#47;1_rss.png'
@@ -172,13 +174,14 @@
           </script>
         </section>
 
-        <section>
+        <section class="section">
+          <h2>Exploring profit opportunities</h2>
           <p>When thinking of investment possibilites, one would of course like to know what sort of profit can be expected for the investment made. That's why below we're comparing rent prices against the sales prices. Toggle the year filter to see how prices have evolved over the years. It can be seen that one-room apartments offer greater rent profit, allthough it must be noted that they also tend to have higher sales prices per square meter when compared to larger apartments.
           </p>
         </section>
 
         <!-- C. Rental vs. sold -->
-        <section>
+        <section class="section">
           <div class='tableauPlaceholder' id='viz1698673745853' style='position: relative'><noscript><a href='#'><img
                   alt='D Rental vs. sold '
                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C_&#47;C_Rentalvs_sold&#47;DRentalvs_sold&#47;1_rss.png'
@@ -216,14 +219,14 @@
           </script>
         </section>
 
-        <section>
+        <section class="section">
           <p>
             If we divide rent per month / m2 by sales price / m2, we can compare the rent profit between the cities. The graph below shows that Kotka & Kouvola stand out from the rest of the cities, having the best rent / sales price ratio in all apartment sizes. It turns out that the biggest cities having the highest sales prices have the lowest rent / sales price ratios. This means that the rent profit is not as good as in the smaller cities. Helsinki being the most expensive in rents & sales prices has clearly the poorest profit ratio. In 2022 the ratio in Helsinki was nearly three times smaller than in Kotka & Kouvola within all apartmens sizes.
           </p>
         </section>
 
          <!-- G. Rents / sold, line chart -->
-        <section>
+        <section class="section">
          <div class='tableauPlaceholder' id='viz1698677955234' style='position: relative'><noscript><a href='#'><img
                  alt='DRent&#47;SoldLine '
                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;79&#47;79JJD46KW&#47;1_rss.png'
@@ -266,7 +269,7 @@
             Turku. You can use the graph below to see the exact predictions for the sales prices of one-room, two-room and three-room properties.</p>
         </section>
 
-        <section>
+        <section class="section">
           <div class='tableauPlaceholder' id='viz1698669670846' style='position: relative'><noscript><a href='#'><img
                   alt='DCombo '
                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H_&#47;H_Predictions&#47;DCombo&#47;1_rss.png'
