@@ -1,336 +1,483 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Property Project</title>
-    <style>
-        header, h1, h2, h3, h4, h5, h6 {
-            text-align: center;
-            background-color: #f0f0f0;
-            font-family: 'Calibri', Arial, sans-serif;
-            line-height: 1.5;
-        }
-        body {
-            background-color: #f0f0f0;
-            font-family: 'Calibri', Arial, sans-serif;
-            font-size: larger;
-            line-height: 1.5;
-        }
-        .container {
-            max-width: 1000px; /* Set a maximum width for the content container */
-            margin: 0 auto; /* Center the container horizontally */
-            padding: 20px; /* Add padding to creat
+  <meta charset="UTF-8">
+  <title>Property Project</title>
+  <style>
+    header,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
+      background-color: #f0f0f0;
+      font-family: 'Calibri', Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Calibri', Arial, sans-serif;
+      font-size: larger;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1000px;
+      /* Set a maximum width for the content container */
+      margin: 0 auto;
+      /* Center the container horizontally */
+      padding: 20px;
+      /* Add padding to creat
             e wide margins */
-        }
-        .section {
-          margin-bottom: 20px; /* Add margin at the bottom of each section */
-        }
-    </style>
+    }
+
+    .section {
+      margin-bottom: 20px;
+      /* Add margin at the bottom of each section */
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
     <header>
-        <h1>Welcome to the Property Project Blog</h1>
+      <h1>Welcome to the Property Project Blog</h1>
     </header>
 
     <main>
-        <section>
-            <h2>About the Property Project</h2>
-            <p>If you are planning on investing in property in Finland, you should read this blog post! We have collected data on property values, 
-            rental rates and population trends to help you identify areas for profitable property investments.</p>
-        </section>
+      <section>
+        <h2>About the Property Project</h2>
+        <p>If you are planning on investing in property in Finland, you should read this blog post! When making
+          investment decisions, the amount of available data can be overwhelming and it can be difficult to paint a
+          bigger picture of the current market situation & trends.
+          To help you identify areas for profitable property investments, we have collected and combined data in an
+          easy-to-grasp format. The data includes statistics about property values, rental rates and population trends
+          as well as some predictions for the future years. </p>
+      </section>
 
-        <section>
-            <h2>Rental rates have been steadily increasing across Finland. Changes in property value tend to correlate with changes in population.</h2>
-            <p>Below, we have collected relevant data on the 20 biggest cities in Finland: Espoo-Kauniainen, Helsinki, Hämeenlinna, Joensuu, Jyväskylä, 
-            Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Oulu, Pori, Porvoo, Rovaniemi, Seinäjoki, Tampere, Turku, Vaasa and Vantaa.
-            For all cities, you can see the total population, sales price per square meter and rent per square meter for one-room, two-room and three-room
-            properties between 2011 and 2022. We have gathered this data from <a href="https://pxdata.stat.fi/PxWeb/pxweb/en/StatFin/">the reliable StatFin database</a>
-            and combined it into a simple graph to help you start your property investment journey!
-            </p>
-        </section>
+      <section>
+        <h2>Rental rates have been steadily increasing across Finland. Changes in property value tend to correlate with
+          changes in population.</h2>
+        <p>Below, we have collected relevant data on the 20 biggest cities in Finland: Espoo-Kauniainen, Helsinki,
+          Hämeenlinna, Joensuu, Jyväskylä,
+          Kotka, Kouvola, Kuopio, Lahti, Lappeenranta, Mikkeli, Oulu, Pori, Porvoo, Rovaniemi, Seinäjoki, Tampere,
+          Turku, Vaasa and Vantaa.
+          For all cities, you can see the total population, sales price per square meter and rent per square meter for
+          one-room, two-room and three-room
+          properties between 2011 and 2022. We have gathered this data from the reliable <a
+            href="https://pxdata.stat.fi/PxWeb/pxweb/en/StatFin/"> StatFin database</a>
+          and combined it into a simple graph to help you start your property investment journey!
+        </p>
+      </section>
 
-        <!-- Property project -->
-        <section>
-          <div class='tableauPlaceholder' id='viz1698683275778' style='position: relative'><noscript><a href='#'><img
-                  alt='DCombo '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Propertyproject&#47;DCombo&#47;1_rss.png'
-                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-              <param name='embed_code_version' value='3' />
-              <param name='site_root' value='' />
-              <param name='name' value='Propertyproject&#47;DCombo' />
-              <param name='tabs' value='no' />
-              <param name='toolbar' value='yes' />
-              <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Propertyproject&#47;DCombo&#47;1.png' />
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' /></object></div>
-          <script type='text/javascript'>
-            var divElement = document.getElementById('viz1698683275778');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else if (divElement.offsetWidth > 500) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else {
-              vizElement.style.width = '100%';
-              vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </section>
+      <!-- Property project -->
+      <section>
+        <div class='tableauPlaceholder' id='viz1698683275778' style='position: relative'><noscript><a href='#'><img
+                alt='DCombo '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Propertyproject&#47;DCombo&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Propertyproject&#47;DCombo' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Propertyproject&#47;DCombo&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698683275778');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
 
-        <section>
-            <p>We have two exclusive tips for you when it comes to examining the data above! 
-            <ul>
-                <li>First, rents have steadily increased in all 20 cities. This is good news for those property investors who rent out their properties!</li>
-                <li>Second, population growth (or lack thereof) seems to correlate with property value. All areas with a declining population (Kotka, 
-                Kouvola, Mikkeli and Pori) have seen declines in property values. Areas with 
-                rapid population growth of over 10 000 residents between 2011-2022 (Espoo-Kauniainen, Helsinki, Jyväskylä, Kuopio, 
-                Oulu, Tampere, Turku and Vantaa) have only seen considerable, steady increases in property value.</li>
-            </ul>
-            </p>
-        </section>
+      <section class="section">
+        <p>We have two exclusive tips for you when it comes to examining the data above!
+          <ul>
+            <li>First, rents have steadily increased in all 20 cities. This is good news for those property investors
+              who rent out their properties!</li>
+            <li>Second, population growth (or lack thereof) seems to correlate with property value. All areas with a
+              declining population (Kotka,
+              Kouvola, Mikkeli and Pori) have seen declines in property values. Areas with
+              rapid population growth of over 10 000 residents between 2011-2022 (Espoo-Kauniainen, Helsinki, Jyväskylä,
+              Kuopio,
+              Oulu, Tampere, Turku and Vantaa) have only seen considerable, steady increases in property value.</li>
+          </ul>
+        </p>
+      </section>
 
-        <section class="section">
-            <p>Now let's examine the data between the cities. Below you can see comparisons in terms of sales & rent prices. It's easy to see that rent prices in the capital area have been significantly greater and have been increasing more rapidly than in other cities. As for sold apartments, square meter prices for Vantaa are left behind Helsinki & Espoo-Kauniainen and are more in line with other major cities, Turku and Tampere. Looking at other cities, we can see that the rental prices have been increasing in all cities and apartments sizes. For sold apartments, apart from the biggest cities the prices have been more steady or even decreasing.
-            </p>
-        </section>
-        
-        <!-- B. Rental apartments -->
-        <section class="section">
-          <div class='tableauPlaceholder' id='viz1698683400511' style='position: relative'><noscript><a href='#'><img
-                  alt='DRental '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B_&#47;B_Rentalapartments&#47;DRental&#47;1_rss.png'
-                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-              <param name='embed_code_version' value='3' />
-              <param name='site_root' value='' />
-              <param name='name' value='B_Rentalapartments&#47;DRental' />
-              <param name='tabs' value='no' />
-              <param name='toolbar' value='yes' />
-              <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B_&#47;B_Rentalapartments&#47;DRental&#47;1.png' />
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' /></object></div>
-          <script type='text/javascript'>
-            var divElement = document.getElementById('viz1698683400511');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else if (divElement.offsetWidth > 500) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else {
-              vizElement.style.width = '100%';
-              vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </section>
+      <section class="section">
+        <h2>Comparing the price data</h2>
+        <p>Now let's examine the data between the cities. Below you can see comparisons in terms of sales & rent prices.
+          It's easy to see that rent prices in the capital area have been significantly greater and have been increasing
+          more rapidly than in other cities. As for sold apartments, square meter prices for Vantaa are left behind
+          Helsinki & Espoo-Kauniainen and are more in line with other major cities, Turku and Tampere. Looking at other
+          cities, we can see that the rental prices have been steadily increasing for all apartment sizes. For sold
+          apartments, apart from the biggest cities the prices have been more steady or even decreasing.
+        </p>
+      </section>
 
-        <!-- A. Sold apartments -->
-        <section class="section">
-          <div class='tableauPlaceholder' id='viz1698683425056' style='position: relative'><noscript><a href='#'><img
-                  alt='DSold '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Soldapartments&#47;DSold&#47;1_rss.png'
-                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-              <param name='embed_code_version' value='3' />
-              <param name='site_root' value='' />
-              <param name='name' value='A_Soldapartments&#47;DSold' />
-              <param name='tabs' value='no' />
-              <param name='toolbar' value='yes' />
-              <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Soldapartments&#47;DSold&#47;1.png' />
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' /></object></div>
-          <script type='text/javascript'>
-            var divElement = document.getElementById('viz1698683425056');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else if (divElement.offsetWidth > 500) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else {
-              vizElement.style.width = '100%';
-              vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </section>
+      <!-- B. Rental apartments -->
+      <section class="section">
+        <div class='tableauPlaceholder' id='viz1698683400511' style='position: relative'><noscript><a href='#'><img
+                alt='DRental '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B_&#47;B_Rentalapartments&#47;DRental&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='B_Rentalapartments&#47;DRental' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B_&#47;B_Rentalapartments&#47;DRental&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698683400511');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
 
-        <section class="section">
-          <h2>Exploring profit opportunities</h2>
-          <p>When thinking of investment possibilites, one would naturally like to know what sort of profit can be expected for the investment made. That's why below we're comparing rent prices against the sales prices. Toggle the year filter to see how prices have evolved over the years. It can be seen that one-room apartments offer greater rent profit, allthough it must be noted that they also tend to have higher sales prices per square meter when compared to larger apartments.
-          </p>
-        </section>
+      <!-- A. Sold apartments -->
+      <section class="section">
+        <div class='tableauPlaceholder' id='viz1698683425056' style='position: relative'><noscript><a href='#'><img
+                alt='DSold '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Soldapartments&#47;DSold&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='A_Soldapartments&#47;DSold' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A_&#47;A_Soldapartments&#47;DSold&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698683425056');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
 
-        <!-- C. Rental vs. sold -->
-        <section class="section">
-          <div class='tableauPlaceholder' id='viz1698683460532' style='position: relative'><noscript><a href='#'><img
-                  alt='D RentalVsSold '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C_&#47;C_Rentalvs_sold&#47;DRentalVsSold&#47;1_rss.png'
-                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-              <param name='embed_code_version' value='3' />
-              <param name='site_root' value='' />
-              <param name='name' value='C_Rentalvs_sold&#47;DRentalVsSold' />
-              <param name='tabs' value='no' />
-              <param name='toolbar' value='yes' />
-              <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C_&#47;C_Rentalvs_sold&#47;DRentalVsSold&#47;1.png' />
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' /></object></div>
-          <script type='text/javascript'>
-            var divElement = document.getElementById('viz1698683460532');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else if (divElement.offsetWidth > 500) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else {
-              vizElement.style.width = '100%';
-              vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </section>
+      <section class="section">
+        <h2>Exploring profit opportunities</h2>
+        <p>When thinking of investment possibilites, one would naturally like to know what sort of profit can be
+          expected for the investment made. That's why below we're comparing rent prices against the sales prices.
+          Toggle the year filter to see how prices have evolved over the years. It can be seen that one-room apartments
+          offer greater rent profit, allthough it must be noted that they also tend to have higher sales prices per
+          square meter when compared to larger apartments.
+        </p>
+      </section>
 
-        <section class="section">
-          <p>
-            If we divide rent per month / m2 by sales price / m2, we can compare the rent profit between the cities. The graph below shows that Kotka & Kouvola stand out from the rest of the cities by having the best rent / sales price ratio in all apartment sizes. It turns out that the biggest cities having the highest sales prices actually have the lowest rent / sales price ratios. This means that the rent profit is not as good as in the smaller cities. Helsinki being the most expensive in rents & sales prices has clearly the poorest profit ratio. In 2022 this ratio in Helsinki was nearly three times smaller than in Kotka & Kouvola within all apartmens sizes.
-          </p>
-        </section>
+      <!-- C. Rental vs. sold -->
+      <section class="section">
+        <div class='tableauPlaceholder' id='viz1698683460532' style='position: relative'><noscript><a href='#'><img
+                alt='D RentalVsSold '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C_&#47;C_Rentalvs_sold&#47;DRentalVsSold&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='C_Rentalvs_sold&#47;DRentalVsSold' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C_&#47;C_Rentalvs_sold&#47;DRentalVsSold&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698683460532');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
 
-         <!-- G. Rents / sold, line chart -->
-        <section class="section">
-          <div class='tableauPlaceholder' id='viz1698683500935' style='position: relative'><noscript><a href='#'><img
-                  alt='DRent&#47;SoldLine '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;G_&#47;G_Rentssoldlinechart&#47;DRentSoldLine&#47;1_rss.png'
-                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-              <param name='embed_code_version' value='3' />
-              <param name='site_root' value='' />
-              <param name='name' value='G_Rentssoldlinechart&#47;DRentSoldLine' />
-              <param name='tabs' value='no' />
-              <param name='toolbar' value='yes' />
-              <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;G_&#47;G_Rentssoldlinechart&#47;DRentSoldLine&#47;1.png' />
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' /></object></div>
-          <script type='text/javascript'>
-            var divElement = document.getElementById('viz1698683500935');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else if (divElement.offsetWidth > 500) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else {
-              vizElement.style.width = '100%';
-              vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </section>
-        
-        <section>
-          <h2>Check out our predictions for six selected areas!</h2>
-          <p>
-            Out of the 20 cities, we have made rent & sales price predictions for six selected areas that showed prediction possibilities based on population development. These cities include Espoo-Kauniainen, Helsinki, Jyväskylä, Oulu, Tampere and 
-            Turku. As for the other cities, population development doesn't unfortunately show as clear correlation with sales prices and they were left out of the prediction model. It should be noted that apartment market is based on multiple different factors such as general economic conditions, interest rates, local demographics and market demand. Here we have made the predictions based on only one variable, but you should nevertheless get an idea of the direction where the market is headed. Forecast for the population development was again provided by StatFin.
-          </p>
-        </section>
+      <section class="section">
+        <p>
+          If we divide rent per month / m2 by sales price / m2, we can compare the rent profit between the cities. The
+          graph below shows that Kotka & Kouvola stand out from the rest of the cities by having the best rent / sales
+          price ratio in all apartment sizes. It turns out that the biggest cities having the highest sales prices
+          actually have the lowest rent / sales price ratios. This means that the rent profit is not as good as in the
+          smaller cities. Helsinki being the most expensive in rents & sales prices has clearly the lowest profit ratio.
+          In 2022 this ratio in Helsinki was nearly three times smaller than in Kotka & Kouvola within all apartmens
+          sizes. The graph below confirms the observation we already made from the previous graph: one-room apartments
+          offer the highest rent profit, while three-room apartments offer the lowest. Keep in mind that whilst the rent
+          profit is higher in smaller cities, the property value has not been growing in the same way as in the bigger
+          cities. When making investments, it comes down to one's personal strategy and it's up to you if you value
+          higher rent profits over possible property value growth.
+        </p>
+      </section>
 
-        <!-- H. Predictions -->
-        <section class="section">
-          <div class='tableauPlaceholder' id='viz1698669670846' style='position: relative'><noscript><a href='#'><img
-                  alt='DCombo '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H_&#47;H_Predictions&#47;DCombo&#47;1_rss.png'
-                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-              <param name='embed_code_version' value='3' />
-              <param name='site_root' value='' />
-              <param name='name' value='H_Predictions&#47;DCombo' />
-              <param name='tabs' value='no' />
-              <param name='toolbar' value='yes' />
-              <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H_&#47;H_Predictions&#47;DCombo&#47;1.png' />
-              <param name='animate_transition' value='yes' />
-              <param name='display_static_image' value='yes' />
-              <param name='display_spinner' value='yes' />
-              <param name='display_overlay' value='yes' />
-              <param name='display_count' value='yes' />
-              <param name='language' value='en-US' /></object></div>
-          <script type='text/javascript'>
-            var divElement = document.getElementById('viz1698669670846');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            if (divElement.offsetWidth > 800) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else if (divElement.offsetWidth > 500) {
-              vizElement.style.width = '1000px';
-              vizElement.style.height = '627px';
-            } else {
-              vizElement.style.width = '100%';
-              vizElement.style.height = '727px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </section>
+      <!-- G. Rents / sold, line chart -->
+      <section class="section">
+        <div class='tableauPlaceholder' id='viz1698683500935' style='position: relative'><noscript><a href='#'><img
+                alt='DRent&#47;SoldLine '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;G_&#47;G_Rentssoldlinechart&#47;DRentSoldLine&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='G_Rentssoldlinechart&#47;DRentSoldLine' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;G_&#47;G_Rentssoldlinechart&#47;DRentSoldLine&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698683500935');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
 
-        <section>
-          <p>We hope that this data helps you in your property investment journey! Even though we are happy to present you this data, we'd like to remind 
-          the reader that predictions should not be used as the only factor in decision-making. It's also notable that the predictions were made with data from 
+      <section>
+        <h2>Check out our predictions for six selected areas!</h2>
+        <p>
+          Out of the 20 cities, we have made rent & sales price predictions for six selected areas that showed
+          prediction possibilities based on population development. These cities include Espoo-Kauniainen, Helsinki,
+          Jyväskylä, Oulu, Tampere and
+          Turku. As for the other cities, population development doesn't unfortunately show as clear correlation with
+          sales prices and they were left out of the prediction model. It should be noted that apartment market is based
+          on multiple different factors such as general economic conditions, interest rates, local demographics and
+          market demand. Here we have made the predictions based on only one variable, but you should nevertheless get
+          an idea of the direction where the market is possibly headed. Forecast for the population development was
+          again provided by StatFin.
+        </p>
+      </section>
+
+      <!-- H. Predictions -->
+      <section class="section">
+        <div class='tableauPlaceholder' id='viz1698669670846' style='position: relative'><noscript><a href='#'><img
+                alt='DCombo '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H_&#47;H_Predictions&#47;DCombo&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='H_Predictions&#47;DCombo' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H_&#47;H_Predictions&#47;DCombo&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698669670846');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
+
+      <section>
+        <p>
+          When looking at rent prices, it seems like Helsinki & Espoo-Kauniainen one-room apartments keep providing the highest rent rate per square meter.
+        </p>
+      </section>
+
+      <!-- I. Predicted rent -->
+      <section>
+        <div class='tableauPlaceholder' id='viz1698689040004' style='position: relative'><noscript><a href='#'><img
+                alt='DPredRent '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;I_&#47;I_Predictedrent&#47;DPredRent&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='I_Predictedrent&#47;DPredRent' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;I_&#47;I_Predictedrent&#47;DPredRent&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698689040004');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
+
+      <section>
+        <p>
+          Within the predicted sales prices, Helsinki offers the biggest opportunities when looking at property value development. Keep in mind however that at this very moment we're in an unusual market situation, where the interest rates have significantly risen after having many years of near 0% interest rates, and this has its effects on the market.
+        </p>
+      </section>
+
+      <!-- J. Predicted sales -->
+      <section>
+        <div class='tableauPlaceholder' id='viz1698689100206' style='position: relative'><noscript><a href='#'><img
+                alt='DPredSales '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;J_&#47;J_Predictedsales&#47;DPredSales&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='J_Predictedsales&#47;DPredSales' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;J_&#47;J_Predictedsales&#47;DPredSales&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1698689100206');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '627px';
+          } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+          }
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
+
+      <section>
+        <p>We hope that this data helps you in your property investment journey! Even though we are happy to present you
+          this data, we'd like to remind
+          the reader that predictions should not be used as the only factor in decision-making. It's also notable that
+          the predictions were made with data from
           2011-2022, a period when the economy has been relatively stable.</p>
-        </section>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Property Project</p>
+      <p>&copy; 2023 Property Project</p>
     </footer>
-    </div>
+  </div>
 </body>
+
 </html>
