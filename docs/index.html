@@ -17,9 +17,10 @@
 
         }
         .container {
-            max-width: 1200px; /* Set a maximum width for the content container */
+            max-width: 1000px; /* Set a maximum width for the content container */
             margin: 0 auto; /* Center the container horizontally */
-            padding: 20px; /* Add padding to create wide margins */
+            padding: 20px; /* Add padding to creat
+            e wide margins */
         }
     </style>
 </head>
@@ -212,6 +213,49 @@
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
           </script>
+        </section>
+
+        <section>
+          <p>
+            If we divide rent per month / m2 by sales price / m2, we can compare the rent profit between the cities. The graph below shows that Kotka & Kouvola stand out from the rest of the cities, having the best rent / sales price ratio in all apartment sizes. It turns out that the biggest cities having the highest sales prices have the lowest rent / sales price ratios. This means that the rent profit is not as good as in the smaller cities. Helsinki being the most expensive in rents & sales prices has clearly the poorest profit ratio. In 2022 the ratio in Helsinki was nearly three times smaller than in Kotka & Kouvola within all apartmens sizes.
+          </p>
+        </section>
+
+         <!-- G. Rents / sold, line chart -->
+        <section>
+         <div class='tableauPlaceholder' id='viz1698677955234' style='position: relative'><noscript><a href='#'><img
+                 alt='DRent&#47;SoldLine '
+                 src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;79&#47;79JJD46KW&#47;1_rss.png'
+                 style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+             <param name='embed_code_version' value='3' />
+             <param name='path' value='shared&#47;79JJD46KW' />
+             <param name='toolbar' value='yes' />
+             <param name='static_image'
+               value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;79&#47;79JJD46KW&#47;1.png' />
+             <param name='animate_transition' value='yes' />
+             <param name='display_static_image' value='yes' />
+             <param name='display_spinner' value='yes' />
+             <param name='display_overlay' value='yes' />
+             <param name='display_count' value='yes' />
+             <param name='language' value='en-US' /></object></div>
+         <script type='text/javascript'>
+           var divElement = document.getElementById('viz1698677955234');
+           var vizElement = divElement.getElementsByTagName('object')[0];
+           if (divElement.offsetWidth > 800) {
+             vizElement.style.width = '1000px';
+             vizElement.style.height = '627px';
+           } else if (divElement.offsetWidth > 500) {
+             vizElement.style.width = '1000px';
+             vizElement.style.height = '627px';
+           } else {
+             vizElement.style.width = '100%';
+             vizElement.style.height = '727px';
+           }
+           var scriptElement = document.createElement('script');
+           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+           vizElement.parentNode.insertBefore(scriptElement, vizElement);
+         </script>
         </section>
 
         <section>
